@@ -13,8 +13,7 @@ public class Movement : MonoBehaviour
 	}
 
 
-	public float speed = 1f;
-	public 
+    public float speed = 1f;
 	
 	// Update is called once per frame
 	void FixedUpdate ()
