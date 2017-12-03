@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4767659919105932}
   - component: {fileID: 33624549745605384}
+  - component: {fileID: 114876198505769132}
   - component: {fileID: 65180927962089058}
   m_Layer: 0
   m_Name: Gold
@@ -39,6 +40,7 @@ GameObject:
   - component: {fileID: 33317165793042556}
   - component: {fileID: 23741806309219272}
   - component: {fileID: 95866078818608630}
+  - component: {fileID: 114363635945260598}
   m_Layer: 0
   m_Name: 1_coin
   m_TagString: Untagged
@@ -52,13 +54,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1970401375034272}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalRotation: {x: 0.5324136, y: -0, z: -0, w: 0.84648436}
+  m_LocalPosition: {x: -0.0012893677, y: -0.007304549, z: -0.002735138}
+  m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 4767659919105932}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 64.337006, y: 0, z: 0}
 --- !u!4 &4767659919105932
 Transform:
   m_ObjectHideFlags: 1
@@ -66,8 +68,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1040487386847836}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 55.06001, y: 1.1999921, z: 33.212807}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4508027351416088}
   m_Father: {fileID: 0}
@@ -150,3 +152,27 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114363635945260598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1970401375034272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b40fbff13c133f4987111ef5aad8127, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+--- !u!114 &114876198505769132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1040487386847836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 228792664d67b2340bb4e19ff0bdcb89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worth: 1
