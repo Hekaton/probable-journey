@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,25 +13,25 @@ public class MoneyCounter : MonoBehaviour
 	{
 		cash = startingCash;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.CompareTag("Gold"))
 		{
-			cash += other.GetComponent<MonetaryWorth>().getWorth();
+			var worth = other.GetComponent<MonetaryWorth>().getWorth();
+			cash += worth;
 		}
-		
 		Destroy(other.gameObject);
 	}
 
 	public float Spend(float amount)
 	{
 		cash -= amount;
+		return cash;
+	}
+
+	public float GetCash()
+	{
 		return cash;
 	}
 }
